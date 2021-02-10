@@ -1,0 +1,63 @@
+html {
+  font-size: 10px;
+  background: url('./IMG_6146.jpg') top center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  flex-wrap: wrap-reverse;
+  
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 .5rem black; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 6rem;
+}
+
+.sound {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+

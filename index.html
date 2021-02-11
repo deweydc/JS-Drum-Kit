@@ -9,6 +9,10 @@
 
 <body>
 
+  
+
+  
+
 
   <div class="keys">
     <div data-key="49" class="key">
@@ -58,6 +62,20 @@
   <audio data-key="55" src="sounds/snare.wav"></audio>
   <audio data-key="56" src="sounds/tom.wav"></audio>
   <audio data-key="57" src="sounds/tink.wav"></audio>
+  
+  <!-- ? audio file to store recording -->
+  <audio class="recording" src=""></audio>
+
+
+
+  <div class="controls">
+    <button class=" btn record">Record</button>
+    <button class="btn play">Play</button>
+    <button class="btn pause">Pause</button>
+  </div>
+
+
+  
 
   <script>
 
@@ -80,6 +98,13 @@
     const keys = document.querySelectorAll('.key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
     window.addEventListener('keydown', playSound)
+
+    const record = document.querySelector('.record');
+    const play = document.querySelector('.play');
+    const pause = document.querySelector('.pause');
+
+
+
 
 
 
